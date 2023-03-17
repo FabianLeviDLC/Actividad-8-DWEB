@@ -1,6 +1,7 @@
 Formulario de creación 
 
-<form action = "" method = "post"  enctype ="multipart/form-data">
+<form action = "{{url('/empleado)}}" method = "post"  enctype ="multipart/form-data">
+@csrf
 
 <label for = "Nombre"> Ingresa el Nombre </label>
 <input type = "Text" name = "Nombre" id = "Nombre">
@@ -18,7 +19,7 @@ Formulario de creación
 <input type = "Text" name = "Info_Extra" id = "Info_Extra">
 <br>
 
-<input type = "Submit" name = "Enviar" id = "Enviar">
+<input type = "Submit" value = "Guardar Datos">
 <br>
 
 </form>
